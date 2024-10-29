@@ -6,11 +6,9 @@
 }
 
 :root {
-    --background-colour:  #2F284F;
+    --background-colour: #2F284F;
     --secondary-background-colour: #6157E1;
     --secondary-colour: #374854;
     --tekst-colour: #4EB5A9;
-    /* Bruk hvit som peimer tekstfarge */
-
-
+    /* Bruk hvit som primer tekstfarge */
 }
