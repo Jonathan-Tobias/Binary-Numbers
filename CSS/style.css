@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --background-colour:  #2F284F;
+    --secondary-background-colour: #6157E1;
+    --secondary-colour: #374854;
+    --tekst-colour: #4EB5A9;
+    /* Bruk hvit som peimer tekstfarge */
+
+
+}
