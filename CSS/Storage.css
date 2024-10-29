@@ -1,4 +1,33 @@
-* {
-    margin: 0%;
-    
+table {
+    border-radius: 15px;
+    border-collapse: collapse;
+    margin: auto;
+
+
+}
+
+th,
+tr {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+tr:nth-of-type(2) {
+    /* rad nr 2 */
+    background-color: lightcoral;
+}
+
+tr:nth-of-type(even) {
+    /* annenhver rad - kan også bruke "odd" i stedet for "even" */
+    background-color: lightcoral;
+}
+
+td:nth-of-type(even) {
+    /* annenhver kolonne */
+    background-color: lightcoral;
+}
+
+td:first-of-type {
+    /* første kolonne - finnes også "last-of-type" */
+    backbground-color: lightcoral;
 }
