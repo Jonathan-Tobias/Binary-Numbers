@@ -6,9 +6,14 @@
 }
 
 :root {
-    --background-colour: #2F284F;
-    --secondary-background-colour: #6157E1;
-    --secondary-colour: #374854;
-    --tekst-colour: #4EB5A9;
+    --background-color: #2F284F;
+    --secondary-background-color: #6157E1;
+    --secondary-color: #374854;
+    --text-colour: #4EB5A9;
     /* Bruk hvit som primer tekstfarge */
+}
+
+body {
+    background-color: var(--background-colour);
+    color: var(--tekst-colour);
 }
