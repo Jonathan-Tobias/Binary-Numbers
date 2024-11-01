@@ -8,6 +8,11 @@ header {
     margin: auto;
 }
 
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 header h1 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
@@ -19,6 +24,13 @@ header p {
     color: white;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    margin: 30px;
+}
+
 .container>div {
     border: 3px solid black;
     background-color: aliceblue;
@@ -27,14 +39,20 @@ header p {
     width: fit-content;
     padding: 5px;
     height: 100%;
+    border-radius: 15px;
 
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    gap: 20px;
-    margin: 30px;
+.tekstboks {
+    border: 3px solid black;
+    background-color: aliceblue;
+    height: 100px;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    align-items: center;
+    height: 100%;
+    border-radius: 15px;
 }
 
 img {
