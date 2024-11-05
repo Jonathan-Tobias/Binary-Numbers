@@ -84,3 +84,15 @@ footer {
     font-size: 0.9em;
     color: #777;
 }
+
+.container {
+    display: grid;
+    align-items: center;
+}
+
+#boks1 {
+
+}
+#boks2 {
+    margin-left: 20px;
+}
