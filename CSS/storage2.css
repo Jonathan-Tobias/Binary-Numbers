@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+}
+.grid-container {
+    
+    display: inline-grid;
+    grid-template-rows: 200 ;
+    grid-template-columns: 40vh 20vh 40vh    ;
+    grid-gap: 10px;
+    
+  
+}
+
+.item1 {
+    background-color: green;
+    grid-column-start: 1;
+    grid-column: 2;
+}
+.item2 {
+
+    
+}
+.item3 {
+    
+}
