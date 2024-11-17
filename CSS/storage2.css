@@ -1,34 +1,87 @@
-*{
-    margin: 0%;
-}
-.grid-container {
-    
-    display: inline-grid;
-    grid-template-rows: 200px 200px 200px ;
-    grid-template-columns: 40vh 20vh 40vh    ;
-    grid-gap: 10px;
-    
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
   
-}
 
-.item1 {
-    background-color: green;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-
-    grid-row-end: 4;
-}
-.item2 {
-    background-color: green;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-
-    grid-row-end: 4;
-
+  .info-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 20px;
+   
+    height: 100vh; /* Full viewport height */
+    width: 100vw; 
     
-}
-.item3 {
+    background: white;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  .header {
+    grid-column: 1 / 3;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .description {
+    grid-column: 1 / 2;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .table-section {
+    grid-column: 1 / 2;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .sidebar {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    background: #f7f7f7;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer {
+    grid-column: 1 / 3;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    padding-top: 10px;
+    border-top: 2px solid #ddd;
+  }
+  
     
-}
+
