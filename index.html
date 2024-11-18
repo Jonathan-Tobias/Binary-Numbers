@@ -9,11 +9,17 @@
 <body>
     <!-- Header -->
     <header>
-        <h1>Binære tall og hvordan PCer fungerer.</h1>
+        <h1>Binære tall og hvordan PCer fungerer</h1>
+        <nav>
+            <a href="index.html">Hjem</a>
+            <a href="HTML/BitsAndBytes.html">Bits og Bytes</a>
+            <a href="HTML/Storage.html">Lagring</a>
+        </nav>
     </header>
 
     <!-- Main Content -->
     <main>
+        <!-- Seksjon om Binære Tall -->
         <section>
             <h2>Binære Tall</h2>
             <p>
@@ -21,7 +27,6 @@
                 Prøv å skrive inn et tall nedenfor for å se hvordan det vises i binær form ved hjelp av lamper.
             </p>
             
-            <!-- Interaktiv del med lamper -->
             <input type="number" id="numberInput" placeholder="Skriv et tall" min="0" max="15">
             <button onclick="convertToBinary()">Vis Binært</button>
 
@@ -33,20 +38,22 @@
             </div>
         </section>
 
+        <!-- Seksjon om Bits og Bytes -->
         <section>
             <h2>Bits and Bytes</h2>
             <p>
                 En bit er den minste enheten med data i en datamaskin og kan være enten 0 eller 1. Åtte bits sammen danner en byte. 
                 Med flere bits kan datamaskiner representere større tall og mer informasjon.
             </p>
-            <a href="HTML/BitsAndBytes.html">Les mer om Bits and Bytes</a>
+            <a href="HTML/BitsAndBytes.html">Les mer om Bits og Bytes</a>
         </section>
 
+        <!-- Seksjon om Lagring -->
         <section>
             <h2>Lagring</h2>
             <p>
                 Data lagres i forskjellige størrelser, fra byte til kilobyte, megabyte, gigabyte, og videre. 
-                Dette gjør at vi kan lagre alt fra små tekstfiler til enorme videofiler på datamaskiner og telefoner.
+                Dette gjør at vi kan lagre alt fra små tekstfiler til enorme videofiler.
             </p>
             <a href="HTML/Storage.html">Les mer om Lagring</a>
         </section>
@@ -63,7 +70,6 @@
             }
 
             const binaryString = number.toString(2).padStart(4, '0');
-
             for (let i = 0; i < 4; i++) {
                 const lamp = document.getElementById(`lamp${i + 1}`);
                 lamp.src = binaryString[i] === '1' ? 'Pictures/lampon.png' : 'Pictures/lampoff.png';
