@@ -2,123 +2,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lagringsplass og Binære Tall</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        h1, h2, h3 {
-            color: #4CAF50;
-        }
-
-        ul {
-            padding-left: 1.5rem;
-        }
-
-        .card {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .card-item {
-            flex: 1 1 calc(33.333% - 1rem);
-            background-color: #f9f9f9;
-            padding: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
-        }
-
-        @media (max-width: 768px) {
-            .card-item {
-                flex: 1 1 calc(50% - 1rem);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .card-item {
-                flex: 1 1 100%;
-            }
-        }
-    </style>
+    <title>Lagringsplass</title>
+   <link rel="stylesheet" href="../CSS/storage.css">
 </head>
 <body>
     <header>
-        <h1>Lagringsplass og Binære Tall</h1>
+        <h1>Lagringsplass</h1>
+        <nav>
+            <a href="/index.html">Hjem</a>
+            <a href="#lagringsplass">Lagringsplass</a>
+            <a href="#tommelfingerregel">Tommelfingerregel</a>
+            <a href="#hvorfor">Hvorfor viktig?</a>
+        </nav>
     </header>
 
-    <div class="container">
-        <section>
-            <h2>Hva er binære tall?</h2>
-            <p>Binære tall er et tallsystem som bruker kun to symboler: 0 og 1. Dette systemet er grunnlaget for hvordan datamaskiner lagrer og behandler data.</p>
-        </section>
-
-        <section>
-            <h2>Lagringsplass</h2>
-            <p>Lagringsplass refererer til mengden data som kan lagres i et medium, som for eksempel en harddisk eller en USB-minnepinne. Det måles ofte i følgende enheter:</p>
+    <main>
+        <!-- Seksjon: Hva er lagringsplass -->
+        <section id="lagringsplass">
+            <h2>Hva er lagringsplass?</h2>
+            <p>Lagringsplass er som hjemmet til all dataen vi bruker i hverdagen. Alt fra bilder, videoer og apper til dokumenter og musikkfiler trenger et sted å bo. Mengden lagringsplass måles i <strong>byte</strong>, med prefikser som forteller oss hvor mye vi har. Her er de vanligste enhetene:</p>
             <ul>
-                <li><strong>Byte (B):</strong> Grunnleggende enhet for lagringsplass.</li>
-                <li><strong>Kilobyte (KB):</strong> 1 KB = 1024 byte.</li>
-                <li><strong>Megabyte (MB):</strong> 1 MB = 1024 KB.</li>
-                <li><strong>Gigabyte (GB):</strong> 1 GB = 1024 MB.</li>
-                <li><strong>Terabyte (TB):</strong> 1 TB = 1024 GB.</li>
+                <li><strong>Byte (B):</strong> Grunnleggende enhet.</li>
+                <li><strong>Kilobyte (KB):</strong> Ca. 1000 byte (perfekt for små tekstfiler).</li>
+                <li><strong>Megabyte (MB):</strong> Ca. 1000 KB (typisk for bilder og musikkfiler).</li>
+                <li><strong>Gigabyte (GB):</strong> Ca. 1000 MB (til filmer og apper).</li>
+                <li><strong>Terabyte (TB):</strong> Ca. 1000 GB (ideelt for harddisker og backup).</li>
             </ul>
         </section>
 
+        <!-- Seksjon: Hva med bit? -->
         <section>
-            <h2>Hvorfor er binære tall viktige?</h2>
-            <div class="card">
-                <div class="card-item">
-                    <h3>Datarepresentasjon</h3>
-                    <p>Alle typer data (tekst, bilder, video) lagres som binære tall.</p>
+            <h2>Men hva med bit?</h2>
+            <p>Her kommer ofte et lite spørsmål opp: Hva er forskjellen mellom bit og byte? En <strong>bit</strong> er den minste enheten for data, som enten kan være 0 eller 1. Det trengs 8 biter for å lage én byte. Så mens byte brukes for å måle lagringskapasitet, brukes bit ofte for å måle overføringshastighet – som når du ser internettforbindelsen din oppgitt i Mbit/s (megabit per sekund).</p>
+        </section>
+
+        <!-- Seksjon: Tommelfingerregelen -->
+        <section id="tommelfingerregel">
+            <h2>Tommelfingerregelen</h2>
+            <p>Det kan være lett å bli forvirret, men her er en enkel tommelfingerregel: <strong>Lagringsplass oppgir vi i byte</strong>, mens <strong>hastighet oppgir vi i bit</strong>. Dette betyr at en harddisk på 1 TB forteller deg hvor mye data den kan holde, mens internettforbindelsen din på 100 Mbit/s forteller hvor raskt du kan laste opp eller ned data.</p>
+            <div class="why-important">
+                <div class="important-card">
+                    <h3>Lagringsplass i byte</h3>
+                    <p>En harddisk på 1 TB bruker byte for å indikere hvor mye data som kan lagres. Dette gjør det enkelt å forstå kapasiteten til lagringsenheter.</p>
                 </div>
-                <div class="card-item">
-                    <h3>Prosessering</h3>
-                    <p>Datamaskiner bruker binære tall for å utføre alle beregninger.</p>
-                </div>
-                <div class="card-item">
-                    <h3>Lagringseffektivitet</h3>
-                    <p>Binære tall gjør det mulig å lagre store mengder data på en kompakt måte.</p>
+                <div class="important-card">
+                    <h3>Hastighet i bit</h3>
+                    <p>Internett- og overføringshastigheter oppgis i bit for å vise hvor raskt data kan sendes eller mottas, som for eksempel 100 Mbit/s.</p>
                 </div>
             </div>
         </section>
-    </div>
 
-    <footer>
-        <p>© 2024 - Lær mer om teknologi!</p>
-    </footer>
+        <!-- Seksjon: Hvorfor er lagringsplass viktig -->
+        <section id="hvorfor">
+            <h2>Hvorfor er lagringsplass viktig?</h2>
+            <div class="why-important">
+                <div class="important-card">
+                    <h3>Datahåndtering</h3>
+                    <p>Evnen til å lagre store mengder data er essensiell for moderne teknologi, fra personlige filer til bedriftsapplikasjoner.</p>
+                </div>
+                <div class="important-card">
+                    <h3>Effektivitet</h3>
+                    <p>Optimal lagringsplass sikrer rask tilgang til data og reduserer risikoen for overbelastning.</p>
+                </div>
+                <div class="important-card">
+                    <h3>Skalerbarhet</h3>
+                    <p>Lagringskapasitet kan enkelt skaleres opp for å møte økende krav fra både brukere og organisasjoner.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
-</html
+</html>
