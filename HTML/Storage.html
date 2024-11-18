@@ -1,75 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html lang="no">
 <head>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../CSS/storage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagringsplass og Binære Tall</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-    <title>Lagringsplass</title>
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #4CAF50;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        .card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .card-item {
+            flex: 1 1 calc(33.333% - 1rem);
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .card-item {
+                flex: 1 1 calc(50% - 1rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 </head>
-
 <body>
     <header>
-        <h1>Lagringsplass</h1>
-
+        <h1>Lagringsplass og Binære Tall</h1>
     </header>
-    <main>
-        <div class="grid-container">
-            <div class="boks1">
 
-                <p> Størrelsen på lagringsplassen i minnet og på en disk blir vanligvis oppgitt i byte, og da med et
-                    prefiks
-                    som angir hvor mange tusen eller millioner byte det er snakk om. Kilo, mega og giga er vanlige
-                    prefikser. En kilobyte er ca. 1000 byte. Når vi bruker betegenslen bit og når vi bruker byte, er
-                    ikke
-                    alltid helt forutsigbart. Men en tommelfingerregel er at Lagringsplass oppgir vi i byte, og
-                    hastigheten
-                    oppgir vi i bit. </p>
+    <div class="container">
+        <section>
+            <h2>Hva er binære tall?</h2>
+            <p>Binære tall er et tallsystem som bruker kun to symboler: 0 og 1. Dette systemet er grunnlaget for hvordan datamaskiner lagrer og behandler data.</p>
+        </section>
+
+        <section>
+            <h2>Lagringsplass</h2>
+            <p>Lagringsplass refererer til mengden data som kan lagres i et medium, som for eksempel en harddisk eller en USB-minnepinne. Det måles ofte i følgende enheter:</p>
+            <ul>
+                <li><strong>Byte (B):</strong> Grunnleggende enhet for lagringsplass.</li>
+                <li><strong>Kilobyte (KB):</strong> 1 KB = 1024 byte.</li>
+                <li><strong>Megabyte (MB):</strong> 1 MB = 1024 KB.</li>
+                <li><strong>Gigabyte (GB):</strong> 1 GB = 1024 MB.</li>
+                <li><strong>Terabyte (TB):</strong> 1 TB = 1024 GB.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Hvorfor er binære tall viktige?</h2>
+            <div class="card">
+                <div class="card-item">
+                    <h3>Datarepresentasjon</h3>
+                    <p>Alle typer data (tekst, bilder, video) lagres som binære tall.</p>
+                </div>
+                <div class="card-item">
+                    <h3>Prosessering</h3>
+                    <p>Datamaskiner bruker binære tall for å utføre alle beregninger.</p>
+                </div>
+                <div class="card-item">
+                    <h3>Lagringseffektivitet</h3>
+                    <p>Binære tall gjør det mulig å lagre store mengder data på en kompakt måte.</p>
+                </div>
             </div>
-            <div class="boks2">
-                <table>
-                    <tr>
-                        <th>Byte </th>
-                        <th>Bit</th>
-                        <th>Binært tall</th>
-                    </tr>
-                    <tr>
-                        <td>En Byte</td>
-                        <td>8 bit</td>
-                        <td>11001100</td>
-                    </tr>
-                    <tr>
-                        <td>To byte</td>
-                        <td>To 8 bit</td>
-                        <td>1100110011001111</td>
-                    </tr>
-                    <tr>
-                        <td>Tre byte</td>
-                        <td>Tre 8 bit</td>
-                        <td>1100110011001111 11001101</td>
-                    </tr>
-                    <tr>
-                        <td>En kilobyte = 1000 byte</td>
-                        <td>Tusen 8 bit</td>
-                        <td>11001100 ...999 ganger</td>
-                    </tr>
-                    <tr>
-                        <td>En megabyte = 1000 000 byte </td>
-                        <td>En million 8 bit</td>
-                        <td>11001100 ...999 999 ganger</td>
-                    </tr>
-                    <tr>
-                        <td>En gigabyte = 1000 000 000 byte</td>
-                        <td>En milliard 8 bit</td>
-                        <td>11001100 ...999 999 999 ganger</td>
-                    </tr>
+        </section>
+    </div>
 
-
-                </table>
-            </div>
-        </div>
-    </main>
-    <footer></footer>
+    <footer>
+        <p>© 2024 - Lær mer om teknologi!</p>
+    </footer>
 </body>
-
-</html>
+</html
