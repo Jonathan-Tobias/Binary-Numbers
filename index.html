@@ -1,15 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="../CSS/homepage.css">
+    <title>Data Grunnleggende</title>
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Test Title</h1>
+        <h1>Binære tall og hvordan PCer fungerer.</h1>
     </header>
-    <main></main>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Binære Tall</h2>
+            <p>
+                Binære tall er grunnlaget for hvordan datamaskiner lagrer og behandler data. Hvert siffer i et binært tall er enten 0 (av) eller 1 (på).
+                Prøv å skrive inn et tall nedenfor for å se hvordan det vises i binær form ved hjelp av lamper.
+            </p>
+            
+            <!-- Interaktiv del med lamper -->
+            <input type="number" id="numberInput" placeholder="Skriv et tall" min="0" max="15">
+            <button onclick="convertToBinary()">Vis Binært</button>
+
+            <div class="binary-demo">
+                <img src="Pictures/lampoff.png" id="lamp1" alt="Lamp 1">
+                <img src="Pictures/lampoff.png" id="lamp2" alt="Lamp 2">
+                <img src="Pictures/lampoff.png" id="lamp3" alt="Lamp 3">
+                <img src="Pictures/lampoff.png" id="lamp4" alt="Lamp 4">
+            </div>
+        </section>
+
+        <section>
+            <h2>Bits and Bytes</h2>
+            <p>
+                En bit er den minste enheten med data i en datamaskin og kan være enten 0 eller 1. Åtte bits sammen danner en byte. 
+                Med flere bits kan datamaskiner representere større tall og mer informasjon.
+            </p>
+            <a href="HTML/BitsAndBytes.html">Les mer om Bits and Bytes</a>
+        </section>
+
+        <section>
+            <h2>Lagring</h2>
+            <p>
+                Data lagres i forskjellige størrelser, fra byte til kilobyte, megabyte, gigabyte, og videre. 
+                Dette gjør at vi kan lagre alt fra små tekstfiler til enorme videofiler på datamaskiner og telefoner.
+            </p>
+            <a href="HTML/Storage2.html">Les mer om Lagring</a>
+        </section>
+    </main>
+
+    <!-- JavaScript for binær konvertering -->
+    <script>
+        function convertToBinary() {
+            const number = parseInt(document.getElementById("numberInput").value);
+
+            if (isNaN(number) || number < 0 || number > 15) {
+                alert("Vennligst skriv inn et tall mellom 0 og 15.");
+                return;
+            }
+
+            const binaryString = number.toString(2).padStart(4, '0');
+
+            for (let i = 0; i < 4; i++) {
+                const lamp = document.getElementById(`lamp${i + 1}`);
+                lamp.src = binaryString[i] === '1' ? 'Pictures/lampon.png' : 'Pictures/lampoff.png';
+            }
+        }
+    </script>
 </body>
 </html>
