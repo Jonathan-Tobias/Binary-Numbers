@@ -68,11 +68,15 @@ section p {
 
 input {
     background-color: #fff;
+    color: #5ab9bd;
     padding: 10px;
     border-radius: 5px;
     border: none;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+input::placeholder {
+    color: #5ab9bd;
 }
 
 button {
