@@ -118,11 +118,14 @@ a {
     margin-top: 20px;
     display: inline-block;
     transition: color 0.3s ease;
+    transition: transform 0.5s ease;
 }
 header a{
     font-weight: normal;
+    transition: transform 0.5s ease;
 }
 
 a:hover {
     color: #49a2a4;
+    transform: scale(1.1);
 }
