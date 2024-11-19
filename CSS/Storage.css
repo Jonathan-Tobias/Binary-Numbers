@@ -1,6 +1,6 @@
 body {
     background-color: #19181d;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color:#5ab9bd ;
@@ -85,7 +85,7 @@ section p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-li.lagringsplass {
+.tabell {
     text-align: left;
 }
 
