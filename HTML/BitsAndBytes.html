@@ -1,89 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bits and Bytes</title>
+    <title>Lagringsplass</title>
     <link rel="stylesheet" href="../CSS/bitsandbytes.css">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/styles.css">
 </head>
 
 <body>
+    <header>
+        <h1>Bits and Bytes</h1>
+        <nav>
+            <a href="/index.html">Hjem</a>
+        </nav>
+    </header>
 
-    <body>
-        <header>
-            <h1>Forstå Bits og Bytes</h1>
-            <p>En enkel introduksjon til de grunnleggende byggeklossene i data.</p>
-        </header>
-        <main>
-            <div class="container">
-                <div id="boks1">
-                    <h1>Headline</h1>
-                    <p>paragraph</p>
-                    <img src="../Pictures/claude.png" alt="" class="bilde">
-                    <br>
-                    <p>SchwindelSchwandel</p>
-                </div>
-                <div id="boks2">
-                    <h1>Headline</h1>
-                    <p>paragraph</p>
-                    <img src="../Pictures/placeholder.png" alt="" class="bilde">
-                    <br>
-                    <p>SchwindelSchwandel</p>
-                </div>
-                <div class="boks">
-                    <h1>Headline</h1>
-                    <p>paragraph</p>
-                    <img src="../Pictures/placeholder.png" alt="" class="bilde">
-                    <p>SchwindelSchwandel</p>
-                </div>
-                <div class="boks">
-                    <h1>Headline</h1>
-                    <p>paragraph</p>
-                    <img src="../Pictures/placeholder.png" alt="" class="bilde">
-                    <br>
-                    <p>SchwindelSchwandel</p>
-                </div>
-                <div class="boks">
-                    <h1>Headline</h1>
-                    <p>paragraph</p>
-                    <img src="../Pictures/placeholder.png" alt="" class="bilde">
-                    <br>
-                    <p>SchwindelSchwandel</p>
-                </div>
-                <div id="boks6">
-                    <h1>Headline</h1>
-                    <p>paragraph</p>
-                    <img src="../Pictures/placeholder.png" alt="" class="bilde">
-                    <br>
-                    <p>SchwindelSchwandel</p>
-                </div>
-            </div>
-            <div class="tekstboks">
-            <h1>Historie</h1>
-            <br>
-            <p>
+    <main>
+        <!-- Seksjon: Hva er lagringsplass -->
+        <section id="lagringsplass">
+            <h2>Hva er en Bit og en Byte</h2>
+            <p><strong>Bits og bytes</strong> er grunnleggende enheter for digital informasjon og brukes til å måle og
+                representere data i datamaskiner og digitale systemer</p>
+            <ul>
+                <li><strong>Bit :</strong> En bit er den minste enheten av digital informasjon og kan bare ha en av to
+                    verdier:
 
-                Bits og bytes er grunnleggende begreper som stammer fra utviklingen av databehandling og
-                informasjonsteori på midten av 1900-tallet. Begrepet *bit*, som står for "binary digit" (binært siffer),
-                ble først introdusert av ingeniøren Claude Shannon på 1940-tallet, ofte kalt "informasjonsteoriens far".
-                Hans arbeid revolusjonerte måten vi forstår og behandler data på, og la grunnlaget for hvordan
-                datamaskiner lagrer og overfører informasjon. Hver bit representerer en binær verdi—0 eller 1—som
-                datamaskiner bruker for å utføre operasjoner og bearbeide data.
+                    0 eller 1
+                    Dette binære systemet danner grunnlaget for hvordan datamaskiner lagrer og behandler informasjon. En
+                    enkelt bit kan representere en enkel tilstand, som "av" eller "på," "sann" eller "usann."
 
-                Bytes kom i bruk senere, som en praktisk måte å gruppere bits på. En byte består av 8 bits, noe som gir
-                256 mulige kombinasjoner og nok plass til å representere en bokstav eller et symbol. Denne
-                standardiseringen gjorde det enklere å bygge og forstå datamaskiner, og bytes ble raskt en enhet for å
-                måle datamengder. Siden den gang har utviklingen av datateknologi ført til stadig større enheter, fra
-                kilobytes til gigabytes og terabytes, men essensen av bits og bytes som byggesteiner i databehandling
-                har forblitt uendret.</p>
-            </div>
+                    Byte.</li>
+                <br>
+                <br>
+                <li><strong>Byte :</strong> Byte
+                    En byte består av 8 bits, som er samlet i en gruppe for å representere mer komplekse data,
+                    som tekst, tall eller farger. For eksempel:
 
-        </main>
+                    En byte kan representere ett enkelt tegn i ASCII-systemet (f.eks. bokstaven A).
+                    En byte kan også brukes til å representere tall i det binære tallsystemet (0-255).</li>
 
-    </body>
+            </ul>
+        </section>
 
+        <!-- Seksjon: Hva med bit? -->
+        <section>
+            <h2>Hvordan bits og bytes brukes til å representere data</h2>
+            <p>Bits og bytes brukes til å fremstille data ved å representere informasjon digitalt gjennom binære verdier
+                (0 og 1). Dette systemet muliggjør lagring, overføring og behandling av ulike typer data i datamaskiner
+                og andre digitale enheter. Her er hvordan det fungerer i praksis:
+                <br>
+                <br>
+                1. Representasjon av tekst
+                Tekst representeres ved hjelp av tegnsett som ASCII eller Unicode, hvor hvert tegn tildeles en unik
+                binær kode. For eksempel, i ASCII representeres bokstaven A med binærkoden 01000001 (8 bits, eller 1
+                byte). På denne måten kan hele alfabetet, tall og symboler lagres og behandles.
+                <br>
+                <br>
+                2. Representasjon av tall
+                Tall kan lagres som binære verdier. For eksempel representerer bitsekvensen 00000001 tallet 1, mens
+                00000010 representerer tallet 2. For større tall og komplekse beregninger brukes forskjellige binære
+                formater, som to-komplement for negative tall eller flyttall for desimaltall.
+                <br>
+                <br>
+                3. Lagring av bilder
+                Bilder lagres som en matrise av piksler, hvor hver piksel har en fargeverdi representert i binær form.
+                For svart-hvitt-bilder kan én bit per piksel brukes (0 for svart, 1 for hvitt). Fargebilder bruker flere
+                bytes per piksel, ofte i RGB-format, der tre bytes (24 bits) angir mengden av rødt, grønt og blått i
+                hver piksel.
+                <br>
+                <br>
+                4. Lyd og musikk
+                Lyd representeres ved å lagre digitale signaler som binære verdier. Analog lyd bølgesamples med jevne
+                mellomrom, og hvert sample konverteres til en binær verdi basert på amplituden på det tidspunktet. Jo
+                høyere oppløsning (flere bits per sample), jo mer nøyaktig blir lydgjengivelsen.
+            </p>
+        </section>
+    </main>
 
 </body>
 
