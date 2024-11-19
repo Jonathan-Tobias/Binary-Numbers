@@ -1,9 +1,9 @@
 
   :root {
-    --background-color: #1c1539;
-    --secondary-background-color: #6157E1;
-    --secondary-color: #374854;
-    --text-colour: #4EB5A9;
+    --background-color: #19181d;
+    --header-background-color: #25242b;
+    --secondary-color:#5ab9bd;
+    --text-colour: #858585;
     /* Bruk hvit som primer tekstfarge */
 }
   
