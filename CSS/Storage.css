@@ -85,6 +85,9 @@ section p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+li.lagringsplass {
+    text-align: left;
+}
 
 .important-card:hover {
     transform: translateY(-5px);
