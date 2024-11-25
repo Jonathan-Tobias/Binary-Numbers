@@ -27,8 +27,8 @@ nav a {
     color: #5ab9bd;
     text-decoration: none;
     font-size: 18px;
-    padding: 10px 15px;
-    margin: 0 10px;
+    padding: 10px 20px;
+    margin: 0 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
